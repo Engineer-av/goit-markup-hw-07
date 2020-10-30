@@ -102,9 +102,4 @@ dist
 
 # TernJS port file
 .tern-port
-images/.DS_Store
-images/hero/.DS_Store
-images/icons/.DS_Store
-images/our-team/.DS_Store
-images/our-works/.DS_Store
-images/what-we-do/.DS_Store
+

@@ -1,0 +1,41 @@
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $primary-background-color;
+
+  &-container {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    @include centered;
+    margin-bottom: 30px;
+    background-color: $secondary-background-color;
+  }
+
+  &-subtitle {
+    margin-bottom: 10px;
+
+    @extend %subtitle;
+    color: $title-text-color;
+  }
+
+  &-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.715;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+  }
+}
+
+.advantages-list {
+  display: flex;
+
+  &-item {
+    width: 270px;
+  }
+
+  &-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+}

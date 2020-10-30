@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -67,14 +67,14 @@
         <div class="overlay">
           <div class="container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="modal-btn" data-modal-open>Заказать услугу</button>
+            <button class="btn" data-modal-open>Заказать услугу</button>
           </div>
         </div>
       </section>
       <!-- OUR ADVANTAGES -->
       <section class="advantages">
         <div class="container">
-          <h2 class="title">Наши преимущества</h2>
+          <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages-list list">
             <li class="advantages-list-item">
               <div class="advantages-container">
@@ -127,42 +127,42 @@
           </ul>
         </div>
       </section>
-      <!-- WHAT WE DO -->
-      <section class="what-we-do">
+      <!-- ACTIVITY -->
+      <section class="activity">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="list">
-            <li class="what-we-do-list-item">
+            <li class="activity-list-item">
               <img
-                src="./images/what-we-do/box-1.jpg"
+                src="./images/activity/box-1.jpg"
                 alt="человек печатает на клавиатуре"
                 width="370"
                 height="294"
               />
               <div class="subtitle-container">
-                <h3 class="what-we-do-subtitle">Десктопные приложения</h3>
+                <h3 class="activity-subtitle">Десктопные приложения</h3>
               </div>
             </li>
-            <li class="what-we-do-list-item">
+            <li class="activity-list-item">
               <img
-                src="./images/what-we-do/box-2.jpg"
+                src="./images/activity/box-2.jpg"
                 alt="человек держит в руках мобильный телефон"
                 width="370"
                 height="294"
               />
               <div class="subtitle-container">
-                <h3 class="what-we-do-subtitle">Мобильные приложения</h3>
+                <h3 class="activity-subtitle">Мобильные приложения</h3>
               </div>
             </li>
-            <li class="what-we-do-list-item">
+            <li class="activity-list-item">
               <img
-                src="./images/what-we-do/box-3.jpg"
+                src="./images/activity/box-3.jpg"
                 alt="человек держит в руках мобильный планшет"
                 width="370"
                 height="294"
               />
               <div class="subtitle-container">
-                <h3 class="what-we-do-subtitle">Дизайнерские решения</h3>
+                <h3 class="activity-subtitle">Дизайнерские решения</h3>
               </div>
             </li>
           </ul>
@@ -552,7 +552,7 @@
               placeholder="E-mail"
               autocomplete="on"
             />
-            <button class="modal-btn" type="submit">
+            <button class="btn" type="submit">
               Подписаться
               <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
@@ -586,7 +586,7 @@
             </svg>
           </label>
           <label class="modal-form-field">
-             <span class="modal-form-label">Телефон</span>
+            <span class="modal-form-label">Телефон</span>
             <input
               class="modal-form-input"
               type="tel"
@@ -612,7 +612,7 @@
           <label class="modal-form-field">
             <span class="modal-form-label">Комментарий</span>
             <textarea
-            class="modal-form-input input-comment"
+              class="modal-form-input input-comment"
               name="comment"
               cols="30"
               rows="6"
@@ -622,14 +622,21 @@
           <!-- <label class="modal-form-field agreement-label">
             <input class="checkbox visually-hidden" type="checkbox" name="agreement" />
             <span class="check-icon"></span>
-            <span class="modal-form-agreement">Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="">Условия договора</a></span>
+            <span class="modal-form-agreement">Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href=""> Условия договора</a></span>
           </label> -->
           <div role="group" class="modal-form-field agreement-label">
-            <input id="checkbox" class="visually-hidden" type="checkbox" name="agreement" />
-            <label for="checkbox" class="modal-form-agreement">Соглашаюсь с рассылкой и принимаю <a class="agreement-link" href="">Условия
-              договора</a></label>
+            <input
+              id="checkbox"
+              class="visually-hidden"
+              type="checkbox"
+              name="agreement"
+            />
+            <label for="checkbox" class="modal-form-agreement"
+              >Соглашаюсь с рассылкой и принимаю&nbsp; 
+              <a class="agreement-link" href="">Условия договора</a></label
+            >
           </div>
-          <button class="modal-btn" type="submit">
+          <button class="btn" type="submit">
             Отправить
           </button>
         </form>

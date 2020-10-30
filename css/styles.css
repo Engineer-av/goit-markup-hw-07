@@ -1,13 +1,13 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
-  --acent-color: #2196f3;
   --text-color-on-acent-background: #ffffff;
-  --logo-color: #000000;
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
   --icon-color: #afb1b8;
+  --acent-color: #2196f3;
+  --logo-color: #000000;
 
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation-duration: 250ms;
@@ -47,7 +47,7 @@ img {
 }
 
 .logo {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
@@ -59,7 +59,7 @@ img {
   color: var(--acent-color);
 }
 
-.modal-btn {
+.btn {
   padding: 10px 32px;
 
   border: none;
@@ -93,6 +93,26 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: inherit;
+
+  transition: color var(--animation-duration) var(--timing-function),
+    border-radius var(--animation-duration) var(--timing-function),
+    background-color var(--animation-duration) var(--timing-function);
+}
+.social-link:hover,
+.social-link:focus {
+  color: var(--text-color-on-acent-background);
+  background-color: var(--acent-color);
+  border-radius: 50%;
 }
 /* ------------------------HEADER------------------------ */
 
@@ -277,23 +297,23 @@ img {
   color: var(--primary-text-color);
 }
 
-/* ------------------------WHAT WE DO------------------------ */
-.what-we-do {
+/* ------------------------ACTIVITY------------------------ */
+.activity {
   padding-bottom: 94px;
   background-color: var(--primary-background-color);
 }
 
-.what-we-do .title {
+.activity .title {
   margin-bottom: 50px;
 }
-.what-we-do .list {
+.activity .list {
   display: flex;
 }
-.what-we-do-list-item {
+.activity-list-item {
   position: relative;
   width: 370px;
 }
-.what-we-do-list-item:not(:last-child) {
+.activity-list-item:not(:last-child) {
   margin-right: 30px;
 }
 .subtitle-container {
@@ -307,7 +327,7 @@ img {
     rgba(47, 48, 58, 0.8)
   );
 }
-.what-we-do-subtitle {
+.activity-subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -374,25 +394,6 @@ img {
   color: var(--icon-color);
 }
 
-.social-link {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: inherit;
-
-  transition: color var(--animation-duration) var(--timing-function),
-    border-radius var(--animation-duration) var(--timing-function),
-    background-color var(--animation-duration) var(--timing-function);
-}
-.social-link:hover,
-.social-link:focus {
-  color: var(--text-color-on-acent-background);
-  background-color: var(--acent-color);
-  border-radius: 50%;
-}
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -564,7 +565,7 @@ img {
 .subscribe-input:not(:placeholder-shown) {
   background-color: var(--primary-background-color);
 }
-.footer .modal-btn {
+.footer .btn {
   display: inline-flex;
   padding: 10px 28px;
 }
@@ -887,7 +888,7 @@ img {
   margin-bottom: 30px;
 }
 
-.modal-form .modal-btn {
+.modal-form .btn {
   display: block;
   margin: 0 auto;
 }
