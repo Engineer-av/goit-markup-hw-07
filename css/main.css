@@ -1,3 +1,11 @@
+.advantages-subtitle, .activity-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -7,14 +15,6 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.advantages-subtitle, .activity-subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 *,
